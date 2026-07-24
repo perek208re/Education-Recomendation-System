@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERS.API", "ERS.API\ERS.API.csproj", "{20AB504D-B07C-4EEC-BFFA-FEBE85743DA1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERS.Core", "..\ERS.Core\ERS.Core\ERS.Core.csproj", "{D185FEB3-0375-4A87-AAC1-358617AF1011}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20AB504D-B07C-4EEC-BFFA-FEBE85743DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20AB504D-B07C-4EEC-BFFA-FEBE85743DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20AB504D-B07C-4EEC-BFFA-FEBE85743DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20AB504D-B07C-4EEC-BFFA-FEBE85743DA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D185FEB3-0375-4A87-AAC1-358617AF1011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D185FEB3-0375-4A87-AAC1-358617AF1011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D185FEB3-0375-4A87-AAC1-358617AF1011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D185FEB3-0375-4A87-AAC1-358617AF1011}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56D03FDC-5E74-4064-921F-82517B9221D6}
+	EndGlobalSection
+EndGlobal

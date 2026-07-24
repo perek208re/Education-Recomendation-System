@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ERS.Core.Algorithms.KNN">
+    <Position X="16.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Algorithms\KNN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERS.Core.Algorithms.Similarities">
+    <Position X="14.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Algorithms\Similarities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERS.Core.Algorithms.TF_IDF">
+    <Position X="16.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAgBDAAAAIAAEAAEAAAAQAAAEAAAAAAAA=</HashCode>
+      <FileName>Algorithms\TF-IDF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERS.Core.Data.MySqlRepository" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAIAAQBAAEAAwAAAAADkAAAAAACAABEQAAACgAAEA=</HashCode>
+      <FileName>Data\MySqlRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ERS.Core.DataPipeline.Udemy.UdemyCourseAdapter">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAEA=</HashCode>
+      <FileName>DataPipeline\Udemy\UdemyCourseAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERS.Core.DataPipeline.Udemy.UdemyCsvExtractor" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAQAAA=</HashCode>
+      <FileName>DataPipeline\Udemy\UdemyCsvExtractor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ERS.Core.DataPipeline.Udemy.UdemyCsvRecord">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAQAAAiAAAAAAAAAAAAAAIAAAAAAAIAAAQAgA=</HashCode>
+      <FileName>DataPipeline\Udemy\UdemyCsvRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERS.Core.DataPipeline.DataPipelineManager">
+    <Position X="19.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAIAAAAIAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataPipeline\DataPipelineManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="rep" />
+      <Field Name="tf_idf" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ERS.Core.Model.Course">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAkAAAAAAAAQAACAAAAABCAAAAAAAAAA=</HashCode>
+      <FileName>Model\Course.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERS.Core.Service.RecommendService" BaseTypeListCollapsed="true">
+    <Position X="19.5" Y="1.5" Width="1.5" />
+    <AssociationLine Name="iter_rep" Type="ERS.Core.Interfaces.IInteractionRepository">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.091" Y="6.495" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AiAgAAAAAEAAQAAAAEACCACAAAgBAAAAAAAAABIAAAI=</HashCode>
+      <FileName>Service\RecommendService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="course_rep" />
+      <Field Name="user_rep" />
+      <Field Name="iter_rep" />
+      <Field Name="tf_idf" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ERS.Core.Interfaces.ICourseExtractor">
+    <Position X="7.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Interfaces\ICourseExtractor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ERS.Core.Interfaces.ICourseRepository">
+    <Position X="10.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAgAAAAAAAAABEQAAACgAAAA=</HashCode>
+      <FileName>Interfaces\ICourseRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ERS.Core.Interfaces.IInteractionRepository">
+    <Position X="12.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAABAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IInteractionRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ERS.Core.Interfaces.IRecommendService">
+    <Position X="14.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Interfaces\IRecommendService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ERS.Core.Interfaces.IUserRepository">
+    <Position X="9" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAEAAQAAAAABEAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IUserRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
